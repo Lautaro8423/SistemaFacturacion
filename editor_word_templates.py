@@ -1,7 +1,18 @@
+from fpdf import FPDF
 import flet as ft
 import shutil
 import zipfile
 import os
+
+pdf = FPDF()
+
+pdf.add_page()
+
+pdf.set_font("Arial","B",16)
+
+width=0
+height=10
+
 
 fecha_facturacion = ft.TextField(label='Fecha Facturación',
                             hint_text="Fecha Facturación", 
